@@ -1,5 +1,5 @@
 
-alerter_funcptr emailAlerter();
+// alerter_funcptr emailAlerter();
 
-alerter_funcptr ledAlerter();
+// alerter_funcptr ledAlerter();
 

@@ -40,7 +40,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 		sum += numberset[k];
 	}
 
-	s.average = sum/setlength;
+	s.average = sum/(float)setlength;
 
 	for(int i=0;i<setlength-1;i++)
 	{

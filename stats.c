@@ -25,6 +25,11 @@ computedStats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
+	
+	for(int a=0;a<setlength-1;a++)
+	{
+		lnumset[a] = numberset[a];
+	}
 
 	for(int i=0;i<setlength-1;i++)
 	{

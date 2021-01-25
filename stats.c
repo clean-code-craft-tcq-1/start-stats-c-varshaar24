@@ -2,6 +2,7 @@
 #include "Alert.h"
 #include <stdio.h>
 
+#define NAN 0/0;
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;

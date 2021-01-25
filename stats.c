@@ -64,7 +64,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	
 	  
     for (i = 0; i < setlength; i++) 
-        printf("%d ", lnumset[i]); 
+        printf("%f", lnumset[i]); 
     printf("\n"); 
 
 	s.min = lnumset[0]+0.5;

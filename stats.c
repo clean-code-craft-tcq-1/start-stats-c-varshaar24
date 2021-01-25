@@ -30,7 +30,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	if((setlength == 0) || (numberset == 0))
 		return s;
 	
-	for(int a=0;a<setlength-1;a++)
+	for(int a=0;a<setlength;a++)
 	{
 		lnumset[a] = numberset[a];
 	}

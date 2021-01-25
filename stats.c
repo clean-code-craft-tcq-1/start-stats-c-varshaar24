@@ -31,7 +31,11 @@ computedStats compute_statistics(const float* numberset, int setlength) {
     s.max = 0;
 	
 	if((setlength == 0) || (numberset == 0))
+	{
+		 s.average = isnan(0/0);
 		return s;
+	}
+		
 	
 	for(int a=0;a<setlength;a++)
 	{

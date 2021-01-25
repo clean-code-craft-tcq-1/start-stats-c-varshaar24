@@ -18,8 +18,8 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 	float sum = 0;
 	
-	float lnumarray[setlength];
-	float * lnumset = &lnumarray;
+	float lnumset[setlength];
+	//float * lnumset = &lnumarray;
 
 
     computedStats s;

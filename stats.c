@@ -46,7 +46,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	{
 		min_index = i;
 
-		for(int j =i+1;j<setlength;j++)
+		for(int j =i+1;j<setlength-1;j++)
 		{
 			if(lnumset[j]<lnumset[min_index])
 			{

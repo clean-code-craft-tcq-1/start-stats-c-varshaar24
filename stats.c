@@ -2,8 +2,6 @@
 #include "Alert.h"
 #include <stdio.h>
 
-#define NAN 0/0;
-
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
@@ -33,9 +31,9 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	
 	if((setlength == 0) || (numberset == 0))
 	{
-		s.average = NAN;
-		s.min = NAN;
-		s.max = NAN;
+		s.average = isnan(s.average/s.min);
+		s.min = isnan(s.average/s.min);
+		s.max = isnan(s.average/s.min);
 		return s;
 	}
 		

@@ -12,13 +12,13 @@ void swap(float* xp, float* yp)
     *yp = temp; 
 } 
 
-Stats compute_statistics(const float* numberset, int setlength) {
+computedStats compute_statistics(const float* numberset, int setlength) {
 
 	int min_index;
 
 	float sum = 0;
 
-    Stats s;
+    computedStats s;
     s.average = 0;
     s.min = 0;
     s.max = 0;

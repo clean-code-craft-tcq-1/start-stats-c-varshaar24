@@ -12,12 +12,12 @@ void swap(float* xp, float* yp)
     *xp = *yp; 
     *yp = temp; 
 } 
-alerter_funcptr emailAlerter()
+void emailAlerter()
 {
 	emailAlertCallCount++;
 }
 
-alerter_funcptr ledAlerter()
+void ledAlerter()
 {
 	ledAlertCallCount++;
 }

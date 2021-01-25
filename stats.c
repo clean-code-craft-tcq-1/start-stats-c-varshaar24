@@ -5,7 +5,7 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-void swap(float* xp, float* yp) 
+void swap(const float* xp, const float* yp) 
 { 
     int temp = *xp; 
     *xp = *yp; 

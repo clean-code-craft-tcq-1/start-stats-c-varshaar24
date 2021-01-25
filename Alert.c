@@ -1,5 +1,5 @@
 
-#include "alert.h"
+#include "Alert.h"
 
 alerter_funcptr emailAlerter()
 {

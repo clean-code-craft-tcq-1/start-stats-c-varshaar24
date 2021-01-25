@@ -14,7 +14,7 @@ void swap(float* xp, float* yp)
 
 computedStats compute_statistics(const float* numberset, int setlength) {
 
-	int min_index;
+	int min_index=0;
 
 	float sum = 0;
 
@@ -29,13 +29,13 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 		for(int j =i+1;j<setlength;j++)
 		{
-			if(numberset[j]<numberset[min_index]
+			if(numberset[j]<numberset[min_index])
 			{
 				min_index = j;
 			}
 		}
 
-		swap(numberset[min_idx], numberset[i]); 
+		swap(numberset[min_index], numberset[i]); 
 
 	}
 

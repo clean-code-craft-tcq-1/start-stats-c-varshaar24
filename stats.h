@@ -2,16 +2,16 @@
 
 typedef struct 
 {
-	float avarage;
+	float average;
 	float max;
 	float min;
 
-}Stats;
+}computedStats;
 
-Stats compute_statistics(const float* numberset, int setlength);
+computedStats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();
-void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats computedStats);
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], computedStats lcomputedStats);
 
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;

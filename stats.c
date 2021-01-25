@@ -12,6 +12,15 @@ void swap(float* xp, float* yp)
     *xp = *yp; 
     *yp = temp; 
 } 
+alerter_funcptr emailAlerter()
+{
+	emailAlertCallCount++;
+}
+
+alerter_funcptr ledAlerter()
+{
+	ledAlertCallCount++;
+}
 
 computedStats compute_statistics(const float* numberset, int setlength) {
 
@@ -74,4 +83,16 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	
 
 	return s;
+}
+
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], computedStats lcomputedStats)
+{
+
+	if(lcomputedStats.max > maxThreshold)
+	{
+		if(alerters[0] != '\0'}
+		alerters[0];
+		if(alerters[1] != '\0'}
+		alerters[1];
+	}
 }

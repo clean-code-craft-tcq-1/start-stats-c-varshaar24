@@ -18,7 +18,8 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 	float sum = 0;
 	
-	float * lnumset;
+	float lnumarray[];
+	float * lnumset = &lnumarray;
 
 
     computedStats s;
@@ -26,7 +27,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
     s.min = 0;
     s.max = 0;
 	
-	if(setlength == 0)
+	if((setlength == 0) || (numberset == 0))
 		return s;
 	
 	for(int a=0;a<setlength-1;a++)

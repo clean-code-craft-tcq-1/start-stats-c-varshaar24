@@ -1,5 +1,6 @@
 #include "stats.h"
 #include "Alert.h"
+#include <stdio.h>
 
 
 int emailAlertCallCount = 0;
@@ -60,6 +61,11 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 		swap(&lnumset[min_index], &lnumset[i]); 
 		
 	}
+	
+	  
+    for (i = 0; i < setlength; i++) 
+        printf("%d ", lnumset[i]); 
+    printf("\n"); 
 
 	s.min = lnumset[0]+0.5;
 	s.max = lnumset[setlength-1];

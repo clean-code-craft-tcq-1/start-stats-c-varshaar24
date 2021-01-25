@@ -96,6 +96,6 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], computedSta
 		//if(alerters[0] != '\0'}
 		alerters[0]();
 		//if(alerters[1] != '\0'}
-		alerters[1];
+		alerters[1]();
 	}
 }

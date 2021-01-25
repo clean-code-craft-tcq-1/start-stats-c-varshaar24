@@ -34,6 +34,13 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	{
 		lnumset[a] = numberset[a];
 	}
+	
+	for(int k=0;k<setlength;k++)
+	{
+		sum += lnumset[k];
+	}
+
+	s.average = sum/setlength;
 
 	for(int i=0;i<setlength-1;i++)
 	{
@@ -51,12 +58,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 	}
 
-	for(int k=0;k<setlength;k++)
-	{
-		sum += lnumset[k];
-	}
 
-	s.average = sum/setlength;
 	s.min = lnumset[0];
 	s.max = lnumset[setlength-1];
 	

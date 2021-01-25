@@ -1,6 +1,7 @@
 #include "stats.h"
 #include "Alert.h"
 #include <stdio.h>
+#include <math.h>
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;

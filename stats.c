@@ -26,10 +26,8 @@ computedStats compute_statistics(const float* numberset, int setlength) {
     s.min = 0;
     s.max = 0;
 	
-	lnumset = numberset;
-	
 	if(setlength == 0)
-		return;
+		return s;
 	
 	for(int a=0;a<setlength-1;a++)
 	{

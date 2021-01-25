@@ -5,7 +5,7 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-void swap(const float* xp, const float* yp) 
+void swap(float* xp, float* yp) 
 { 
     int temp = *xp; 
     *xp = *yp; 
@@ -17,6 +17,9 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	int min_index=0;
 
 	float sum = 0;
+	
+	float * lnumset;
+	lnumset = numberset;
 
     computedStats s;
     s.average = 0;
@@ -29,24 +32,24 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 		for(int j =i+1;j<setlength;j++)
 		{
-			if(numberset[j]<numberset[min_index])
+			if(lnumset[j]<lnumset[min_index])
 			{
 				min_index = j;
 			}
 		}
 
-		swap(&numberset[min_index], &numberset[i]); 
+		swap(&lnumset[min_index], &lnumset[i]); 
 
 	}
 
 	for(int k=0;k<setlength-1;k++)
 	{
-		sum += numberset[k];
+		sum += lnumset[k];
 	}
 
 	s.average = sum/setlength;
-	s.min = numberset[0];
-	s.max = numberset[setlength-1];
+	s.min = lnumset[0];
+	s.max = lnumset[setlength-1];
 	
 
 	return s;

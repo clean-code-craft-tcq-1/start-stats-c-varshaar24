@@ -58,7 +58,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 		}
 
 		swap(&lnumset[min_index], &lnumset[i]); 
-		s.min = lnumset[i];
+		s.min = lnumset[min_index];
 	}
 
 	

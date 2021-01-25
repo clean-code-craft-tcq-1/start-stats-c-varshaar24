@@ -8,7 +8,7 @@ int ledAlertCallCount = 0;
 
 void swap(float* xp, float* yp) 
 { 
-    int temp = *xp; 
+    float temp = *xp; 
     *xp = *yp; 
     *yp = temp; 
 } 
@@ -66,7 +66,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
     for (i = 0; i < setlength; i++) 
         printf("%f \n", lnumset[i]); 
 
-	s.min = lnumset[0]+0.5;
+	s.min = lnumset[0];
 	s.max = lnumset[setlength-1];
 	
 

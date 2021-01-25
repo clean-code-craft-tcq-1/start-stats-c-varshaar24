@@ -35,7 +35,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 			}
 		}
 
-		swap(numberset[min_index], numberset[i]); 
+		swap(&numberset[min_index], &numberset[i]); 
 
 	}
 

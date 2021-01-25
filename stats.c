@@ -5,11 +5,6 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-struct Stats
-{
-	float average,min,max;
-};
-
 void swap(float* xp, float* yp) 
 { 
     int temp = *xp; 
@@ -17,13 +12,13 @@ void swap(float* xp, float* yp)
     *yp = temp; 
 } 
 
-struct Stats compute_statistics(const float* numberset, int setlength) {
+Stats compute_statistics(const float* numberset, int setlength) {
 
 	int min_index;
 
 	float sum = 0;
 
-    struct Stats s;
+    Stats s;
     s.average = 0;
     s.min = 0;
     s.max = 0;

@@ -35,7 +35,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 		lnumset[a] = numberset[a];
 	}
 	
-	for(int k=0;k<setlength-1;k++)
+	for(int k=0;k<setlength;k++)
 	{
 		sum += numberset[k];
 	}

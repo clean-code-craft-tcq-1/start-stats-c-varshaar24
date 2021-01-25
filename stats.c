@@ -19,7 +19,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	float sum = 0;
 	
 	float * lnumset;
-	lnumset = numberset;
+
 
     computedStats s;
     s.average = 0;

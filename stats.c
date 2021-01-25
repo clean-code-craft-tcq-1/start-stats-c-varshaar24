@@ -15,6 +15,8 @@ void swap(float* xp, float* yp)
 computedStats compute_statistics(const float* numberset, int setlength) {
 
 	int min_index=0;
+	int i=0;
+	int j=0;
 
 	float sum = 0;
 	
@@ -42,21 +44,21 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 	s.average = sum/(float)setlength;
 
-	for(int i=0;i<setlength-1;i++)
+	for(i=0;i<setlength-1;i++)
 	{
 		min_index = i;
 
-		for(int j =i+1;j<setlength;j++)
+		for(j =i+1;j<setlength;j++)
 		{
 			if(lnumset[j]<lnumset[min_index])
 			{
 				min_index = j;
-				s.min = lnumset[j];
+				
 			}
 		}
 
 		swap(&lnumset[min_index], &lnumset[i]); 
-
+		s.min = lnumset[i];
 	}
 
 	

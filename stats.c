@@ -32,7 +32,9 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	
 	if((setlength == 0) || (numberset == 0))
 	{
-		 s.average = isnan(0/0);
+		s.average = NaN;
+		s.min = NaN;
+		s.max = NaN;
 		return s;
 	}
 		

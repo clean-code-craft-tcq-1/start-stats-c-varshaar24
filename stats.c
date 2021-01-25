@@ -59,7 +59,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	}
 
 
-	s.min = lnumset[0];
+	s.min = lnumset[min_index];
 	s.max = lnumset[setlength-1];
 	
 

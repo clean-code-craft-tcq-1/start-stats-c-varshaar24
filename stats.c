@@ -51,6 +51,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 			if(lnumset[j]<lnumset[min_index])
 			{
 				min_index = j;
+				s.min = lnumset[j];
 			}
 		}
 
@@ -58,7 +59,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 
 	}
 
-	s.min = lnumset[j];
+	
 	s.max = lnumset[setlength-1];
 	
 

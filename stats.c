@@ -36,11 +36,8 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	for(int a=0;a<setlength;a++)
 	{
 		lnumset[a] = numberset[a];
-	}
-	
-	for(int k=0;k<setlength;k++)
-	{
-		sum += numberset[k];
+		
+		sum += numberset[a];
 	}
 
 	s.average = sum/(float)setlength;

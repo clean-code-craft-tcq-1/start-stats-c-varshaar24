@@ -26,6 +26,8 @@ TEST_CASE("average is NaN for empty array") {
     
     //Design the REQUIRE statement here.
     REQUIRE(lcomputedStats.average == 1);
+    REQUIRE(lcomputedStats.max == 1);
+    REQUIRE(lcomputedStats.min == 1);
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
 }
 

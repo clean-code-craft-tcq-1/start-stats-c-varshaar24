@@ -42,7 +42,7 @@ computedStats compute_statistics(const float* numberset, int setlength) {
 	{
 		s.average = isnanf(s.average/s.min);
 		s.min = isnanf(s.average/s.min);
-		s.max = isnanf(s.average/s.max);
+		s.max = isnan(s.average/s.max);
 		return s;
 	}
 		
